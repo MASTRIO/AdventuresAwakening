@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "AdventuresAwakening",
+  "version": "${version}",
+  "name": "AdventuresAwakening",
+  "description": "yeah",
+  "authors": [
+    "MASTRIO"
+  ],
+  "contact": {
+    "repo": "https://github.com/MASTRIO/Adventures-Awakening"
+  },
+  "license": "MIT",
+  "icon": "assets/AdventuresAwakening/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.mastrio.adventuresawakening.client.AdventuresAwakeningClient"
+    ],
+    "main": [
+      "me.mastrio.adventuresawakening.AdventuresAwakening"
+    ]
+  },
+  "mixins": [
+    "AdventuresAwakening.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.4",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
